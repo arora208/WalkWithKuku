@@ -1,0 +1,551 @@
+body {
+  position: relative;
+  overflow-x: hidden;
+  background-color: #a2d7fd;
+}
+#mid-content {
+  background-color: #4796f2;
+  border-radius: 20px;
+  margin: 2% 1.5%;
+  color: white;
+}
+#mid-content h1 {
+  font-size: 60px;
+  padding: 5%;
+  font-family: Georgia, serif;
+  font-weight: 100;
+}
+#mid-content h3 {
+  font-size: 45px;
+  padding: 0% 10% 2% 10%;
+  font-weight: 100;
+  font-family: "Bellota", cursive;
+}
+#whatsapp {
+  height: 58px;
+}
+#call {
+  height: 54px;
+}
+#mid-content-1 {
+  display: flex;
+  justify-content: center;
+  background-color: #a2d7fd;
+  border-radius: 40px;
+  padding: 13px;
+  margin: 2%;
+}
+
+#whatsapp-content-1 {
+  display: flex;
+  justify-content: center;
+  background-color: #a2d7fd;
+  border-radius: 40px;
+  padding: 13px;
+  margin: 2% 0%;
+}
+
+#mid-content-1 a {
+  margin: 5%;
+}
+
+#whatsapp-content-1 a {
+  margin: 5%;
+}
+
+.carousel-item {
+  height: 700px; /* Set the height of the carousel item */
+}
+.carousel-item .headerImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Ensure the image covers the entire carousel item */
+}
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+  z-index: 1000;
+}
+.sidebar {
+  width: 250px;
+  background: #333;
+  color: #fff;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  transition: left 0.2s ease;
+  z-index: 999;
+}
+.sidebar.active {
+  left: 0; /* Visible when active */
+}
+.content {
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+.content.shifted {
+  margin-left: 250px; /* Shifted when sidebar is active */
+}
+.sidebar h2 {
+  text-align: center;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+}
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.slideshow-container {
+  overflow: hidden;
+  width: 100%; /* Ensure slideshow container stretches to full width */
+}
+
+.slideshow-inner {
+  display: flex;
+  position: relative; /* Change position to relative */
+}
+
+.slider {
+  flex: 0 0 auto;
+  padding: 0.5%; /* Remove padding to eliminate gaps */
+  box-sizing: border-box;
+  height: 500px; /* Set a fixed height for the slider */
+  overflow: hidden; /* Hide any overflow to prevent scrollbars */
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire slider */
+  display: block;
+  border-radius: 5%;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+}
+
+.image-container {
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  float: right;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease;
+  float: right;
+  border-radius: 2%;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-overlay i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.image-container:hover .hover-overlay {
+  opacity: 0.5;
+}
+
+.image-container:hover img {
+  filter: blur(4px); /* Adjust blur intensity */
+}
+
+.descriptions {
+  flex: 1;
+  padding: 20px;
+  color: #022087;
+}
+
+.description {
+  margin-bottom: 20px;
+  padding: 0 40px 40px 20px;
+}
+
+.description h1 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-family: "bellota", "bold";
+  font-weight: 800;
+}
+
+.description p {
+  margin-top: 2%;
+  margin-bottom: 8%;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+#pages-section {
+  color: #022087;
+  margin: 5%;
+}
+#pages-section h1 {
+  font-family: georgia, serif;
+  font-size: 50px;
+}
+#pages-section .row {
+  margin: 2%;
+}
+.btn-right-arrow {
+  position: relative;
+  padding-right: 2rem; /* Ensure space for icon */
+  border: 2px solid #022087; /* Blue border */
+  color: #022087; /* Blue text color */
+  text-align: left; /* Align text to the left */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color change */
+}
+.btn-right-arrow::after {
+  content: "\2192"; /* Unicode for right arrow */
+  position: absolute;
+  right: 0.5rem; /* Adjust position of arrow */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-right-arrow:hover {
+  color: white; /* Change text color on hover */
+  background-color: #022087; /* Change background color on hover */
+}
+.btn-right-arrow::after {
+  content: "\2192"; /* Unicode for right arrow */
+  position: absolute;
+  right: 0.5rem; /* Adjust position of arrow */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #022087; /* Blue arrow color */
+}
+.btn-right-arrow:hover::after {
+  color: white; /* Change arrow color on hover */
+}
+#mid-content-2 {
+  background-color: #022087;
+  border-radius: 20px;
+  margin: 5% 1%;
+  color: white;
+}
+#mid-content-2 h3 {
+  font-size: 19.2px;
+  padding: 0% 10% 2% 10%;
+  font-weight: 100;
+  font-family: "inter", light;
+}
+#mid-content-2 h1 {
+  font-size: 36px;
+  margin: 2%;
+  font-family: "georgia", regular;
+}
+.review-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.review {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    transition: transform 0.5s ease;
+  }
+
+.review-item {
+  flex: 0 0 auto;
+  width: 100%; /* Ensures each item takes full width initially */
+  max-width: 100%; /* Adjust as needed to leave space for prev/next buttons */
+  margin: 0 auto; /* Center each item horizontally */
+  padding: 5% 10%; /* Adjust padding as needed */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.review-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+#mid-content-3 {
+  background-color: #3aadff  ;
+  border-radius: 20px;
+  margin: 10% 1%;
+  color: white;
+}
+#mid-content-4 {
+  background-color: #022087;
+  border-radius: 20px;
+  margin: 0.2% 1%;
+  color: white;
+}
+
+#mid-content-4 h1 {
+  font-size: 36px;
+  margin: 2%;
+  font-family: "georgia", regular;
+}
+#mid-content-4 h3 {
+  font-size: 19px;
+  padding: 0% 10% 2% 10%;
+  font-weight: 100;
+  font-family: "inter", regular;
+}
+
+footer {
+  background-color: #A2D7FD; /* Light blue background */
+    padding: 0%;
+    margin-top: 0%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 5% auto;
+}
+
+.footer-container > div {
+  margin: 0 20px; /* Adjusted margin */
+}
+
+h3 {
+  margin-bottom: 20px; /* Adjusted margin */
+}
+
+p {
+  margin: 5px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+ul li a {
+  text-decoration: underline;
+  color: #022087;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+.carousel-caption{
+  top: 1% !important;
+}
+.carousel-caption h2{
+  margin: 0% 35%;
+  font-family: 'georgia',cursive;
+  font-weight: bold;
+}
+.carousel-caption .uthImg{
+  top: -19% !important;
+  position: relative;
+  left: 60%;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-container > div {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .carousel-caption h2{
+    margin: 0% 20%;
+    font-family: 'georgia';
+    font-weight: bold;
+  }
+  #footerImg {
+    height: 100%;
+    width: 100%;
+  }
+  #mid-content {
+    margin: 5% 2% !important;
+  }
+  #mid-content h1{
+    font-size: 25px !important;
+  }
+  #mid-content h3{
+    font-size: 25px !important;
+  }
+  #mid-content-1 {
+    padding: 13px !important;
+    margin: 2% !important;
+  }
+  #whatsapp-content-1 {
+    padding: 13px !important;
+    margin: 2% !important;
+  }
+
+  #mid-content-1 a {
+    margin: 2% !important;
+  }
+
+  #whatsapp-content-1 a {
+    margin: 2% !important;
+  }
+  .carousel-caption h2 {
+    margin: 0% 20% !important;
+  }
+  .carousel-caption .uthImg {
+    top: -15% !important;
+  }
+   #mid-content-2 {
+    padding: 4% 0% !important;
+  }
+  #mid-content-4 {
+    padding: 4% 0% !important;
+  }
+}
+
+#image-foot {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-line {
+  height: 2px;
+  background-color: #000; /* Black color for the line */
+  margin: 20px 0;
+}
+
+#mid-content-siteseeing {
+  background-color: #a2d7fd;
+  border-radius: 20px;
+  margin: 0.2% 1%;
+}
+#mid-content-siteseeing h1 {
+  font-size: 40px;
+  margin: 2%;
+  font-family: "bellota", bold;
+  color: #022087;
+}
+#mid-content-siteseeing h3 {
+  font-size: 27px;
+  padding: 0% 8% 1% 10%;
+  font-weight: 100;
+  font-family: "inter", regular;
+  color: #022087;
+}
+
+#mid-content-4-ss h3 {
+  font-size: 30px;
+  margin: 2%;
+  padding: 0% 10% 0% 10%;
+  font-weight: 100;
+  font-family: "inter", regular;
+  color: #022087;
+}
+
+#included {
+  background-color: #3aadff  ;
+  border-radius: 20px;
+  margin: 4% 0%;
+  color: #022087;
+}
+
+.include-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.include {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+  }
+
+.include-item {
+  flex: 0 0 auto;
+  width: 100%; /* Ensures each item takes full width initially */
+  max-width: 100%; /* Adjust as needed to leave space for prev/next buttons */
+  padding: 2%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#whatsapndCalbox {
+  display: flex;
+  justify-content: center;
+  background-color: #a2d7fd;
+  border-radius: 40px;
+  padding: 13px;
+  margin: 1% 0%;
+}
+#footerImg {
+  height: 100%;
+  width: 100%;
+}
+#mid-content-carrental{
+  display: flex;
+  justify-content: center;
+  background-color: #4796F2;
+  border-radius: 40px;
+  padding: 0%;
+  margin: 2%;
+}
+#mid-content-carrental a{
+  margin: 5%;
+}
+#call_2{
+ height: 58px;
+}
+#mid-content-siteseeing h1{
+  font-family: 'georgia','serif';
+  font-size: 45px;
+}
