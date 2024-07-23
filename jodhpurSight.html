@@ -19,34 +19,24 @@
     />
   </head>
   <body class="color-set">
-    <div class="sidebar" id="sidebar">
-      <ul>
-        <li><a href="/index-2.html">Home</a></li>
-        <li>
-          <a href="/jodhpurSight.html">Jodhpur Sight Seeing</a>
-        </li>
-        <li><a href="/blueCity.html">Blue City Walk</a></li>
-        <li>
-          <a href="/osiaCamel.html">Osian Camel Safari</a>
-        </li>
-        <li><a href="/cyclingTour.html">Cycling Tour</a></li>
-        <li>
-          <a href="/BhisnoiVillageSafari.html"
-            >Bishnoi Village Safari</a
-          >
-        </li>
-        <li><a href="/carRental.html">Car Rental</a></li>
-        <li>
-          <a href="/JawaiLeopardSafari.html"
-            >Jawai Leopard Safari</a
-          >
-        </li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+    <div id="myDrawer" class="drawer">
+      <a href="/index.html">Home</a>
+      <a href="/jodhpurSight.html">Jodhpur Sight Seeing</a>
+      <a href="/blueCity.html">Blue City Walk</a>
+      <a href="/osiaCamel.html">Osian Camel Safari</a>
+      <a href="/cyclingTour.html">Cycling Tour</a>
+      <a href="/BhisnoiVillageSafari.html">Bishnoi Village Safari</a>
+      <a href="/carRental.html">Car Rental</a>
+      <a href="/JawaiLeopardSafari.html">Jawai Leopard Safari</a>
+      <div class="social-icons">
+          <a href="https://www.instagram.com/kushvendra_pratap_singh_gohil?igsh=MWdubTl0eTFhaHJldg==" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+          <a href="https://www.tripadvisor.in/AttractionProductReview-g297668-d27993915-Jodhpur_Walk_With_Kuku-Jodhpur_Jodhpur_District_Rajasthan.html
+          2024 (Jodhpur) Jodhpur Walk With Kuku" target="_blank"><img src="images/images (1).png" alt="TripAdvisor"></a>
+      </div>
+  </div>
     <div class="container-fluid">
+      <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
       <div class="row" id="mid-content-siteseeing">
-        <span class="menu-icon" onclick="toggleSidebar(event)">&#9776;</span>
         <center>
           <h1>Jodhpur Sight Seeing</h1>
         </center>
@@ -125,7 +115,8 @@
       <div class="footer-container">
         <div class="social-media">
           <h3>Social Media</h3>
-          <p>Instagram</p>
+            <p><a href="https://www.tripadvisor.in/AttractionProductReview-g297668-d27993915-Jodhpur_Walk_With_Kuku-Jodhpur_Jodhpur_District_Rajasthan.html
+          2024 (Jodhpur) Jodhpur Walk With Kuku" target="_blank"><img src="images/tripAdvisor.svg" alt="TripAdvisor"></a></p>
         </div>
         <div class="contacts">
           <h3>Contacts</h3>
@@ -152,11 +143,23 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-      function toggleSidebar(event) {
-        event.stopPropagation(); // Prevent the sidebar from closing when clicking the menu icon
-        const sidebar = document.getElementById("sidebar");
-        const content = document.querySelector(".content");
-        sidebar.classList.toggle("active");
+      function openDrawer() {
+        document.body.classList.add("drawer-open");
+        document.addEventListener("click", closeDrawerOnClickOutside);
+      }
+
+      function closeDrawer() {
+        document.body.classList.remove("drawer-open");
+        document.removeEventListener("click", closeDrawerOnClickOutside);
+      }
+
+      function closeDrawerOnClickOutside(event) {
+        if (
+          !document.getElementById("myDrawer").contains(event.target) &&
+          !event.target.classList.contains("open-drawer-btn")
+        ) {
+          closeDrawer();
+        }
       }
 
       document.addEventListener("click", function (event) {

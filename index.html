@@ -18,26 +18,23 @@
     />
   </head>
   <body>
-    <div class="sidebar" id="sidebar">
-      <ul>
-        <li><a href="/index-2.html">Home</a></li>
-        <li>
-          <a href="/jodhpurSight.html">Jodhpur Sight Seeing</a>
-        </li>
-        <li><a href="/blueCity.html">Blue City Walk</a></li>
-        <li>
-          <a href="/osiaCamel.html">Osian Camel Safari</a>
-        </li>
-        <li><a href="/cyclingTour.html">Cycling Tour</a></li>
-        <li>
-          <a href="/BhisnoiVillageSafari.html">Bishnoi Village Safari</a>
-        </li>
-        <li><a href="/carRental.html">Car Rental</a></li>
-        <li>
-          <a href="/JawaiLeopardSafari.html">Jawai Leopard Safari</a>
-        </li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <div id="myDrawer" class="drawer">
+      <a href="/index.html">Home</a>
+      <a href="/jodhpurSight.html">Jodhpur Sight Seeing</a>
+      <a href="/blueCity.html">Blue City Walk</a>
+      <a href="/osiaCamel.html">Osian Camel Safari</a>
+      <a href="/cyclingTour.html">Cycling Tour</a>
+      <a href="/BhisnoiVillageSafari.html">Bishnoi Village Safari</a>
+      <a href="/carRental.html">Car Rental</a>
+      <a href="/JawaiLeopardSafari.html">Jawai Leopard Safari</a>
+      <div class="social-icons">      
+        <a
+          href="https://www.tripadvisor.in/AttractionProductReview-g297668-d27993915-Jodhpur_Walk_With_Kuku-Jodhpur_Jodhpur_District_Rajasthan.html
+          2024 (Jodhpur) Jodhpur Walk With Kuku"
+          target="_blank"
+          ><img src="images/tripAdvisor.svg" alt="TripAdvisor"
+        /></a>
+      </div>
     </div>
 
     <div
@@ -48,7 +45,7 @@
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <span class="menu-icon" onclick="toggleSidebar(event)">&#9776;</span>
+          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
           <div class="carousel-caption d-md-block">
             <h2>JODHPUR WALK With KUKU</h2>
             <img
@@ -64,7 +61,7 @@
           />
         </div>
         <div class="carousel-item">
-          <span class="menu-icon" onclick="toggleSidebar(event)">&#9776;</span>
+          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
           <div class="carousel-caption d-md-block">
             <h2>JODHPUR WALK With KUKU</h2>
             <img
@@ -80,7 +77,7 @@
           />
         </div>
         <div class="carousel-item">
-          <span class="menu-icon" onclick="toggleSidebar(event)">&#9776;</span>
+          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
           <img
             class="d-block headerImg w-100"
             src="images/home page hedder slide show/thada.jpg"
@@ -96,7 +93,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <span class="menu-icon" onclick="toggleSidebar(event)">&#9776;</span>
+          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
           <img
             class="d-block headerImg w-100"
             src="images/home page hedder slide show/stepwell.jpg"
@@ -112,7 +109,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <span class="menu-icon" onclick="toggleSidebar(event)">&#9776;</span>
+          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
           <img
             class="d-block headerImg w-100"
             src="images/home page hedder slide show/umed.jpg"
@@ -128,7 +125,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <span class="menu-icon" onclick="toggleSidebar(event)">&#9776;</span>
+          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
           <img
             class="d-block headerImg w-100"
             src="images/home page hedder slide show/mehrangarh-fort.jpg"
@@ -161,8 +158,8 @@
         </h3>
       </center>
       <div class="row">
-        <div class="col-xl-5 col-sm-5"></div>
-        <div class="col-xl-2 col-sm-2" id="mid-content-1">
+        <div class="col-xl-5 col-sm-12"></div>
+        <div class="col-xl-2 col-sm-12" id="mid-content-1">
           <a href="Https://wa.me/919461762017" target="_blank"
             ><img id="whatsapp" src="images/whatsapp.png" alt="WhatsApp"
           /></a>
@@ -170,7 +167,7 @@
             ><img id="call" src="images/call.png" alt="Call"
           /></a>
         </div>
-        <div class="col-xl-5 col-sm-5"></div>
+        <div class="col-xl-5 col-sm-12"></div>
       </div>
     </div>
     <div class="row">
@@ -471,8 +468,8 @@
         </h3>
       </center>
       <div class="row">
-        <div class="col-xl-5 col-sm-5"></div>
-        <div class="col-xl-2 col-sm-2" id="mid-content-1">
+        <div class="col-xl-5 col-sm-12"></div>
+        <div class="col-xl-2 col-sm-12" id="mid-content-1">
           <a href="Https://wa.me/919461762017" target="_blank"
             ><img id="whatsapp" src="images/whatsapp.png" alt="WhatsApp"
           /></a>
@@ -480,7 +477,7 @@
             ><img id="call" src="images/call.png" alt="Call"
           /></a>
         </div>
-        <div class="col-xl-5 col-sm-5"></div>
+        <div class="col-xl-5 col-sm-12"></div>
       </div>
     </div>
     <div class="row" id="mid-content-3">
@@ -824,7 +821,14 @@
       <div class="footer-container">
         <div class="social-media">
           <h3>Social Media</h3>
-          <p>Instagram</p>
+          <p>          
+            <a
+              href="https://www.tripadvisor.in/AttractionProductReview-g297668-d27993915-Jodhpur_Walk_With_Kuku-Jodhpur_Jodhpur_District_Rajasthan.html
+          2024 (Jodhpur) Jodhpur Walk With Kuku"
+              target="_blank"
+              ><img src="images/tripAdvisor.svg" alt="TripAdvisor"
+            /></a>
+          </p>
         </div>
         <div class="contacts">
           <h3>Contacts</h3>
@@ -867,11 +871,23 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-      function toggleSidebar(event) {
-        event.stopPropagation(); // Prevent the sidebar from closing when clicking the menu icon
-        const sidebar = document.getElementById("sidebar");
-        const content = document.querySelector(".content");
-        sidebar.classList.toggle("active");
+      function openDrawer() {
+        document.body.classList.add("drawer-open");
+        document.addEventListener("click", closeDrawerOnClickOutside);
+      }
+
+      function closeDrawer() {
+        document.body.classList.remove("drawer-open");
+        document.removeEventListener("click", closeDrawerOnClickOutside);
+      }
+
+      function closeDrawerOnClickOutside(event) {
+        if (
+          !document.getElementById("myDrawer").contains(event.target) &&
+          !event.target.classList.contains("open-drawer-btn")
+        ) {
+          closeDrawer();
+        }
       }
 
       $(document).ready(function () {
