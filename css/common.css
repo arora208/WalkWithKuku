@@ -54,7 +54,7 @@ body {
 }
 
 .carousel-item {
-  height: 700px;  /*Set the height of the carousel item */
+  height: 700px; /*Set the height of the carousel item */
 }
 .carousel-item .headerImg {
   height: 100%;
@@ -177,6 +177,11 @@ body {
 }
 
 .images {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+}
+.images-car{
   display: flex;
   flex-wrap: wrap;
   float: right;
@@ -537,25 +542,32 @@ ul li a:hover {
     padding: 0% 3% 2% 5% !important;
     font-size: 15px !important;
   }
-  .images{
+  .images {
     justify-content: center !important;
   }
-  .image-container img{
+  .images-car {
+    justify-content: center !important;
+    margin-right: 25px !important;
+  }
+  .image-container img {
     width: 95% !important;
   }
-  .drawer{
-    height: 55% !important;
+  .drawer {
+    height: 75% !important;
   }
   #mid-content-siteseeing h1 {
     font-size: 20px !important;
     padding: 11px !important;
     margin: 4% !important;
-  } 
+  }
   #mid-content-4-ss h3 {
     font-size: 15px !important;
   }
   #included {
     margin: 4% 2% !important;
+  }
+  #call_2 {
+    height: 43px !important;
   }
 }
 @media (max-width: 480px) {
