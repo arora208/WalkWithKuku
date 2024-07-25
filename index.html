@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Jodhpur walk with kuku</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -18,6 +19,19 @@
     />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
+      <div class="navbar-content">
+        <h2>JODHPUR WALK With KUKU</h2>
+      </div>
+      <div class="navbar-image">
+        <img
+          class="uthImg"
+          src="images/home page hedder slide show/camel.png"
+          alt="Camel image"
+        />
+      </div>
+    </nav>
     <div id="myDrawer" class="drawer">
       <a href="/index.html">Home</a>
       <a href="/jodhpurSight.html">Jodhpur Sight Seeing</a>
@@ -27,7 +41,7 @@
       <a href="/BhisnoiVillageSafari.html">Bishnoi Village Safari</a>
       <a href="/carRental.html">Car Rental</a>
       <a href="/JawaiLeopardSafari.html">Jawai Leopard Safari</a>
-      <div class="social-icons">      
+      <div class="social-icons">
         <a
           href="https://www.tripadvisor.in/AttractionProductReview-g297668-d27993915-Jodhpur_Walk_With_Kuku-Jodhpur_Jodhpur_District_Rajasthan.html
           2024 (Jodhpur) Jodhpur Walk With Kuku"
@@ -36,7 +50,6 @@
         /></a>
       </div>
     </div>
-
     <div
       id="photoSlider"
       class="carousel slide"
@@ -45,15 +58,6 @@
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
-          <div class="carousel-caption d-md-block">
-            <h2>JODHPUR WALK With KUKU</h2>
-            <img
-              class="uthImg"
-              src="images/home page hedder slide show/camel.png"
-              alt="First slide"
-            />
-          </div>
           <img
             class="d-block headerImg w-100"
             src="images/home page hedder slide show/1-m.jpg"
@@ -61,15 +65,6 @@
           />
         </div>
         <div class="carousel-item">
-          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
-          <div class="carousel-caption d-md-block">
-            <h2>JODHPUR WALK With KUKU</h2>
-            <img
-              class="uthImg"
-              src="images/home page hedder slide show/camel.png"
-              alt="First slide"
-            />
-          </div>
           <img
             class="d-block headerImg w-100"
             src="images/home page hedder slide show/clock1.jpg"
@@ -77,68 +72,32 @@
           />
         </div>
         <div class="carousel-item">
-          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
           <img
             class="d-block headerImg w-100"
             src="images/home page hedder slide show/thada.jpg"
             alt="Third slide"
           />
-          <div class="carousel-caption d-md-block">
-            <h2>JODHPUR WALK With KUKU</h2>
-            <img
-              class="uthImg"
-              src="images/home page hedder slide show/camel.png"
-              alt="First slide"
-            />
-          </div>
         </div>
         <div class="carousel-item">
-          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
           <img
             class="d-block headerImg w-100"
             src="images/home page hedder slide show/stepwell.jpg"
             alt="Fourth slide"
           />
-          <div class="carousel-caption d-md-block">
-            <h2>JODHPUR WALK With KUKU</h2>
-            <img
-              class="uthImg"
-              src="images/home page hedder slide show/camel.png"
-              alt="First slide"
-            />
-          </div>
         </div>
         <div class="carousel-item">
-          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
           <img
             class="d-block headerImg w-100"
             src="images/home page hedder slide show/umed.jpg"
             alt="Fifth slide"
           />
-          <div class="carousel-caption d-md-block">
-            <h2>JODHPUR WALK With KUKU</h2>
-            <img
-              class="uthImg"
-              src="images/home page hedder slide show/camel.png"
-              alt="First slide"
-            />
-          </div>
         </div>
         <div class="carousel-item">
-          <div class="open-drawer-btn" onclick="openDrawer()">&#9776;</div>
           <img
             class="d-block headerImg w-100"
             src="images/home page hedder slide show/mehrangarh-fort.jpg"
             alt="Sixth slide"
           />
-          <div class="carousel-caption d-md-block">
-            <h2>JODHPUR WALK With KUKU</h2>
-            <img
-              class="uthImg"
-              src="images/home page hedder slide show/camel.png"
-              alt="First slide"
-            />
-          </div>
         </div>
       </div>
     </div>
@@ -484,7 +443,11 @@
       <div class="review-container">
         <div class="review">
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 1.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 1.png"
+              alt="review-img"
+            />
             <h2>Pual</h2>
             <p>
               A Guide who will quickly become your Friend!<br /><br />
@@ -499,7 +462,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 2.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 2.png"
+              alt="review-img"
+            />
             <h2>Shasha</h2>
             <p class="review-inner">
               had a wonderful trip with kuku who was a relaxed, fun and
@@ -509,7 +476,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 3.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 3.png"
+              alt="review-img"
+            />
             <h2>Jerry</h2>
             <p class="review-inner">
               We met kuku in Jodhpur which was the final city we visited on our
@@ -524,7 +495,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 4.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 4.png"
+              alt="review-img"
+            />
             <h2>Maleen W</h2>
             <p class="review-inner">
               It was such a nice experience! The driver and guide were so
@@ -537,7 +512,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 5.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 5.png"
+              alt="review-img"
+            />
             <h2>Michelle</h2>
             <p class="review-inner">
               kuku, our guide was awesome very friendly and knowledgable and
@@ -548,7 +527,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 6.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 6.png"
+              alt="review-img"
+            />
             <h2>jerry H</h2>
             <p class="review-inner">
               Fantastic guide . Made the trip for us. Very informative without
@@ -556,7 +539,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 7.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 7.png"
+              alt="review-img"
+            />
             <h2>Kaya</h2>
             <p class="review-inner">
               have stayed at kuku s familiy place and had a great tour in
@@ -564,7 +551,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 8.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 8.png"
+              alt="review-img"
+            />
             <h2>joe</h2>
             <p class="review-inner">
               great guide for both the old city and fort We used Mr.kuku twice
@@ -575,7 +566,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 9.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 9.png"
+              alt="review-img"
+            />
             <h2>Catherine</h2>
             <p class="review-inner">
               After a few hours you forget you are with a guide and you feel
@@ -586,7 +581,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 10.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 10.png"
+              alt="review-img"
+            />
             <h2>Nick</h2>
             <p class="review-inner">
               We had the pleasure of being guided around Jodhpur fort and the
@@ -600,7 +599,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 11.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 11.png"
+              alt="review-img"
+            />
             <h2>Sankash</h2>
             <p class="review-inner">
               he has deep knowledge about the history of jodhpur his
@@ -611,7 +614,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 12.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 12.png"
+              alt="review-img"
+            />
             <h2>Neeraj</h2>
             <p class="review-inner">
               Best experience of Jodhpur Mr kuku shares his knowledge about
@@ -621,7 +628,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 13.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 13.png"
+              alt="review-img"
+            />
             <h2>Sean</h2>
             <p class="review-inner">
               Mr Rathore gave my wife and I an excellent tour of Mehrangarh
@@ -631,7 +642,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 14.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 14.png"
+              alt="review-img"
+            />
             <h2>Lucia</h2>
             <p class="review-inner">
               kuku Singh is friendly, knowledgeable and patient . He tilered the
@@ -640,7 +655,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 15.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 15.png"
+              alt="review-img"
+            />
             <h2>Virgil</h2>
             <p class="review-inner">
               We visited the Jaswant Thada and the Mehrangarh fort with Mr.
@@ -652,7 +671,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 16.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 16.png"
+              alt="review-img"
+            />
             <h2>Bhanusaxena</h2>
             <p class="review-inner">
               Mazedar Guide <br />
@@ -664,7 +687,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 17.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 17.png"
+              alt="review-img"
+            />
             <h2>Rebecca A</h2>
             <p class="review-inner">
               Fun way to see a beautiful city <br />
@@ -677,7 +704,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 18.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 18.png"
+              alt="review-img"
+            />
             <h2>Ruth b</h2>
             <p class="review-inner">
               We enjoyed a brilliant well guided and very informative trip round
@@ -687,7 +718,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 19.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 19.png"
+              alt="review-img"
+            />
             <h2>Louise</h2>
             <p class="review-inner">
               Good tour, saw some of the historical sites and learnt more about
@@ -696,7 +731,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 20.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 20.png"
+              alt="review-img"
+            />
             <h2>Pmmh101</h2>
             <p class="review-inner">
               This was my second time in Jodphur , so i wanted to see a bit more
@@ -712,7 +751,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 21.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 21.png"
+              alt="review-img"
+            />
             <h2>Smushed blueberry</h2>
             <p class="review-inner">
               This is a great opportunity to see the less touristic side of
@@ -726,7 +769,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 22.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 22.png"
+              alt="review-img"
+            />
             <h2>Thinkingindia</h2>
             <p class="review-inner">
               The cycling tour was a wonderful introduction to the city and the
@@ -743,7 +790,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 23.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 23.png"
+              alt="review-img"
+            />
             <h2>Julien</h2>
             <p class="review-inner">
               My wife and I really enjoyed our cycling tour. We also stoped to
@@ -754,7 +805,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 24.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 24.png"
+              alt="review-img"
+            />
             <h2>Tyler F</h2>
             <p class="review-inner">
               kuku was our guide that our hotel arranged for us. He gave a great
@@ -765,7 +820,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 25.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 25.png"
+              alt="review-img"
+            />
             <h2>Beth A</h2>
             <p class="review-inner">
               It was really very hot. But I think winter is the best time to
@@ -774,7 +833,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 26.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 26.png"
+              alt="review-img"
+            />
             <h2>Jonathan L</h2>
             <p class="review-inner">
               Great experience…scooted into the old city and then very
@@ -783,7 +846,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 27.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 27.png"
+              alt="review-img"
+            />
             <h2>Divya S</h2>
             <p class="review-inner">
               Jawai safari is adventure trip with full of joy. Leopard and
@@ -792,7 +859,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 28.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 28.png"
+              alt="review-img"
+            />
             <h2>Resort</h2>
             <p class="review-inner">
               We had a lovely time, and both the safari were extremely good. The
@@ -803,7 +874,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 29.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 29.png"
+              alt="review-img"
+            />
             <h2>Vp66</h2>
             <p class="review-inner">
               The safari do not take u to the actual leopard hills but he took
@@ -811,7 +886,11 @@
             </p>
           </div>
           <div class="review-item">
-            <img id="review_image" src="images/review_image/Ellipse 5.png" alt="review-img"/>
+            <img
+              id="review_image"
+              src="images/review_image/Ellipse 5.png"
+              alt="review-img"
+            />
             <h2>Srikanth M</h2>
             <p class="review-inner">
               The best off road and leopard safari we have ever done. Drive ,
@@ -851,7 +930,7 @@
       <div class="footer-container">
         <div class="social-media">
           <h3>Social Media</h3>
-          <p>          
+          <p>
             <a
               href="https://www.tripadvisor.in/AttractionProductReview-g297668-d27993915-Jodhpur_Walk_With_Kuku-Jodhpur_Jodhpur_District_Rajasthan.html
           2024 (Jodhpur) Jodhpur Walk With Kuku"
