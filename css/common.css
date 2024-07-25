@@ -147,15 +147,6 @@ body {
 .drawer .social-icons img {
   width: 75%;
 }
-.open-drawer-btn {
-  font-size: 30px;
-  cursor: pointer;
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 1100;
-  color: rgba(255, 255, 255);
-}
 .drawer-open .drawer {
   width: 250px;
 }
@@ -169,7 +160,7 @@ body {
 }
 
 .slider img {
-  width: 100%;
+  width: auto;
   height: 100%;
   object-fit: cover; /* Ensure the image covers the entire slider */
   display: block;
@@ -181,7 +172,7 @@ body {
   flex-wrap: wrap;
   float: right;
 }
-.images-car{
+.images-car {
   display: flex;
   flex-wrap: wrap;
   float: right;
@@ -439,12 +430,50 @@ ul li a:hover {
   font-weight: bold;
   text-align: start;
 }
-.carousel-caption .uthImg {
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #a2d7fd; /* Adjust the background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
+  position: fixed; /* Makes the navbar fixed */
+  top: 0; /* Positions the navbar at the top */
+  width: 100%; /* Ensures the navbar spans the entire width */
+  z-index: 1000;
+}
+.open-drawer-btn {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 1px;
+  left: 10px;
+  z-index: 1100;
+  color: rgba(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar-content h2 {
+  margin: 0%;
+  font-size: 24px;
+  text-align: center;
+  font-family: "georgia", cursive;
+  font-weight: bold;
+}
+.navbar-image img {
+  height: 40px; /* Adjust as needed */
+  width: auto;
+}
+.navbar-content {
+  text-align: center;
+  flex-grow: 1;
+}
+.uthImg {
   top: -19% !important;
   position: relative;
-  left: 65%;
-  height: 10%;
 }
+
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -519,7 +548,10 @@ ul li a:hover {
     padding: 10px; /* Add some padding around the container */
   }
   .slider {
-    height: 200px !important;
+    height: 200px;
+  }
+  .slider img {
+    width: auto;
   }
   #pages-section h1 {
     font-size: 40px !important;
@@ -569,6 +601,12 @@ ul li a:hover {
   #call_2 {
     height: 43px !important;
   }
+  .navbar-content h2 {
+    font-size: 14px !important;
+  }
+  .navbar-content {
+    text-align: center;
+  }
 }
 @media (max-width: 480px) {
   .review-item {
@@ -576,6 +614,12 @@ ul li a:hover {
   }
   .slider img {
     border-radius: 2% !important;
+  }
+  .navbar-content h2 {
+    font-size: 14px !important;
+  }
+  .navbar-content {
+    text-align: center;
   }
 }
 
